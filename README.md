@@ -1,2 +1,52 @@
-# VVC-CU-TU-partition-visualize
+# VVC-CU/TU-partition-visualize
 Visualize CU/TU partition
+Add the code in EncCU.cpp at the end of compressCTU function
+### CU
+'''
+string filename = to_string(ctuindex);
+  ofstream myfile;
+  myfile.open("C:/Users/PinJJ/Desktop/frame/Cactus/QP32/CTU_" + filename + ".txt");
+  for (auto &currCU : cs.traverseCUs(area, CH_L))
+  {
+	  const CompArea&  lumaArea = currCU.block(COMPONENT_Y);
+	  int cuX = lumaArea.x;
+	  int cuY = lumaArea.y;
+	  int cuH = lumaArea.height;
+	  int cuW = lumaArea.width;
+	  string info = "";
+
+
+	  info = to_string(cuX) + " " + to_string(cuY) + " " + to_string(cuH) +" "+ to_string(cuW) +"\n";
+	  myfile << info;
+
+
+  }
+
+  myfile.close();
+'''
+
+### TU
+'''
+  /*ofstream TUmyfile;
+  TUmyfile.open("C:/Users/PinJJ/Desktop/frame/Traffic/QP32/TU_" + filename + ".txt");
+  for (auto &currCU : cs.traverseCUs(area, CH_L))
+  {
+	  for (auto &currTU : CU::traverseTUs(currCU))
+	  {
+
+		  const CompArea&  lumaArea = currTU.block(COMPONENT_Y);
+		  int cuX = lumaArea.x;
+		  int cuY = lumaArea.y;
+		  int cuH = lumaArea.height;
+		  int cuW = lumaArea.width;
+		  int mtsidx = currTU.mtsIdx;
+		  string info = "";
+		  info = to_string(cuX) + " " + to_string(cuY) + " " + to_string(cuH) + " " + to_string(cuW) + " " + to_string(mtsidx) + "\n";
+		  TUmyfile << info;
+
+	  }
+
+  }
+
+  TUmyfile.close();*/
+  '''
