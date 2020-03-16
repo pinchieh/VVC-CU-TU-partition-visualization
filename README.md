@@ -1,8 +1,8 @@
 # VVC-CU/TU-partition-visualize
-Visualize CU/TU partition
-Add the code in EncCU.cpp at the end of compressCTU function
+Visualize CU/TU partition  
+Add the code in EncCU.cpp at the end of compressCTU function  
 ### CU
-
+  
 ```
   string filename = to_string(ctuindex);
   ofstream myfile;
@@ -27,7 +27,7 @@ Add the code in EncCU.cpp at the end of compressCTU function
 ```
 
 ### TU
-
+  
 ```  
   ofstream TUmyfile;
   TUmyfile.open("./TU_" + filename + ".txt");
