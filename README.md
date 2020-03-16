@@ -2,6 +2,7 @@
 Visualize CU/TU partition
 Add the code in EncCU.cpp at the end of compressCTU function
 ### CU
+
 '''
 string filename = to_string(ctuindex);
   ofstream myfile;
@@ -26,6 +27,7 @@ string filename = to_string(ctuindex);
 '''
 
 ### TU
+
 '''
   /*ofstream TUmyfile;
   TUmyfile.open("C:/Users/PinJJ/Desktop/frame/Traffic/QP32/TU_" + filename + ".txt");
@@ -49,4 +51,4 @@ string filename = to_string(ctuindex);
   }
 
   TUmyfile.close();*/
-  '''
+'''
