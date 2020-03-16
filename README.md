@@ -3,8 +3,8 @@ Visualize CU/TU partition
 Add the code in EncCU.cpp at the end of compressCTU function
 ### CU
 
-'''
-string filename = to_string(ctuindex);
+    
+  string filename = to_string(ctuindex);
   ofstream myfile;
   myfile.open("C:/Users/PinJJ/Desktop/frame/Cactus/QP32/CTU_" + filename + ".txt");
   for (auto &currCU : cs.traverseCUs(area, CH_L))
@@ -24,11 +24,11 @@ string filename = to_string(ctuindex);
   }
 
   myfile.close();
-'''
+
 
 ### TU
 
-'''
+    
   /*ofstream TUmyfile;
   TUmyfile.open("C:/Users/PinJJ/Desktop/frame/Traffic/QP32/TU_" + filename + ".txt");
   for (auto &currCU : cs.traverseCUs(area, CH_L))
@@ -51,4 +51,4 @@ string filename = to_string(ctuindex);
   }
 
   TUmyfile.close();*/
-'''
+
