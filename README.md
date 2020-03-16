@@ -6,7 +6,7 @@ Add the code in EncCU.cpp at the end of compressCTU function
 ```
   string filename = to_string(ctuindex);
   ofstream myfile;
-  myfile.open("C:/Users/PinJJ/Desktop/frame/Cactus/QP32/CTU_" + filename + ".txt");
+  myfile.open("./CTU_" + filename + ".txt");
   for (auto &currCU : cs.traverseCUs(area, CH_L))
   {
 	  const CompArea&  lumaArea = currCU.block(COMPONENT_Y);
@@ -30,7 +30,7 @@ Add the code in EncCU.cpp at the end of compressCTU function
 
 ```  
   ofstream TUmyfile;
-  TUmyfile.open("C:/Users/PinJJ/Desktop/frame/Traffic/QP32/TU_" + filename + ".txt");
+  TUmyfile.open("./TU_" + filename + ".txt");
   for (auto &currCU : cs.traverseCUs(area, CH_L))
   {
 	  for (auto &currTU : CU::traverseTUs(currCU))
