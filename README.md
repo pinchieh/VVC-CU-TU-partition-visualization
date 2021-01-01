@@ -1,6 +1,6 @@
 # VVC-CU/TU-partition-visualization
 # Visualization  
-![image](https://github.com/pinchieh/Two-phase-Multi-model/blob/master/Fast%20QTMT%20Alg.PNG)
+![image](https://github.com/pinchieh/VVC-CU-TU-partition-visualize/blob/master/CU Partition.PNG)
 # Visualize CU/TU partition  
 Add the following code in EncCU.cpp at the end of compressCTU function  
 ### CU
