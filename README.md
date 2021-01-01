@@ -1,7 +1,7 @@
 # VVC-CU/TU-partition-visualization
-# Visualization  
+### Visualization  
 ![image](https://github.com/pinchieh/VVC-CU-TU-partition-visualize/blob/master/CU%20Partition.PNG)
-# Visualize CU/TU partition  
+### Visualize CU/TU partition  
 Add the following code in EncCU.cpp at the end of compressCTU function  
 ### CU
   
